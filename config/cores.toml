@@ -1,0 +1,26 @@
+# Versions used for the compatibility baseline.
+[versions]
+xray = "26.11.9"
+sing-box = "1.14.4"
+mihomo = "1.19.34"
+
+[formats]
+"0" = "xray"
+"1" = "sing-box"
+"2" = "mihomo"
+
+[portable]
+protocols = ["vless", "vmess", "trojan", "shadowsocks", "shadowsocks2022", "socks5", "http", "hysteria2", "hysteria", "tuic", "anytls", "naive"]
+streams = ["tcp", "ws", "grpc", "http_upgrade"]
+
+[portable.target_specific]
+hysteria = ["sing-box", "mihomo"]
+tuic = ["sing-box", "mihomo"]
+anytls = ["sing-box", "mihomo"]
+naive = ["sing-box"]
+socks5_tls = ["xray", "mihomo"]
+
+[listener_templates]
+xray = ["vless", "vmess", "trojan", "hysteria2", "shadowsocks2022"]
+sing-box = ["vless", "vmess", "trojan", "hysteria2", "hysteria", "tuic", "anytls", "shadowsocks2022", "naive"]
+mihomo = ["vless", "vmess", "trojan", "hysteria2", "tuic", "anytls", "shadowsocks2022"]

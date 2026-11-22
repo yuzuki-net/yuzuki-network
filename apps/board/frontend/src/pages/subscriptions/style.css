@@ -1,0 +1,33 @@
+.subscription-address {
+  min-width: 0;
+  max-inline-size: min(26rem, 100%);
+}
+.dialog-panel .subscription-address {
+  max-inline-size: 100%;
+}
+.subscription-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.subscription-removal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-block: 0.25rem;
+}
+.subscription-removal-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.subscription-mobile-core {
+  display: none;
+}
+@media (max-width: 640px) {
+  .subscription-mobile-core {
+    display: block;
+  }
+}

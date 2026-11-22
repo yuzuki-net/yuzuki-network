@@ -1,0 +1,11 @@
+{
+  "remaining_traffic": "📊 ترافیک باقی‌مانده: {remaining} / {total}",
+  "used_traffic_unlimited": "📊 ترافیک مصرف‌شده: {used} · نامحدود",
+  "next_reset": "📅 بازنشانی بعدی: {date}",
+  "expires": "📅 تاریخ انقضا: {date}",
+  "no_expiry": "بدون انقضا",
+  "unlimited_validity": "📅 اعتبار: {date}",
+  "website": "🌐 وب‌سایت: {url}",
+  "group_name": "📊 اطلاعات اشتراک",
+  "custom_template_example": "👤 {email} · دستگاه‌ها {devices}/{max_devices}"
+}

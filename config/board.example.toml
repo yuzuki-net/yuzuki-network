@@ -1,0 +1,16 @@
+bind = "127.0.0.1:3000"
+# Set YUZUKI_DATABASE_URL, or set database_url in a private local file.
+subscription_route = "documents"
+allow_registration = false
+secure_cookies = true
+# Set the exact IP addresses of HTTP proxies that append X-Forwarded-For.
+# trusted_proxies = ["127.0.0.1", "::1"]
+# public_dir = "/srv/meridian/public"
+
+# Uncomment to accept enrolled nodes.
+# [control]
+# bind = "0.0.0.0:3443"
+# certificate = "/etc/yuzuki/control.crt"
+# private_key = "/etc/yuzuki/control.key"
+# node_ca_certificate = "/etc/yuzuki/node-ca.crt"
+# node_ca_key = "/etc/yuzuki/node-ca.key"

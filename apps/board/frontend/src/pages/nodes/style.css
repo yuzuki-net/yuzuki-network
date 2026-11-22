@@ -1,0 +1,133 @@
+.node-tabs {
+  border-bottom: 1px solid var(--color-kumo-line);
+}
+.node-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.node-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: var(--ui-card-pad);
+}
+.node-step-card header,
+.node-publish-summary > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.node-step-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.node-step-card svg,
+.node-publish-summary svg {
+  color: var(--brand-accent);
+}
+.node-publish-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.node-format-badges {
+  gap: 0.35rem;
+}
+.node-instance-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) auto;
+  align-items: start;
+  gap: 1rem;
+  padding: var(--ui-card-pad);
+}
+.node-instance-card header {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.node-instance-card h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.node-optional {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 0.75rem 0.25rem;
+}
+.node-editor [data-field] {
+  min-width: 0;
+}
+.node-flow-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.4fr);
+  align-items: center;
+  gap: 0.75rem;
+}
+.node-flow-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 0.875rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--color-kumo-line);
+  background: color-mix(in srgb, var(--color-kumo-recessed) 40%, transparent);
+}
+.wizard-preset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.625rem;
+}
+.wizard-preset-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--color-kumo-line);
+  background: var(--color-kumo-base);
+  text-align: start;
+  cursor: pointer;
+  transition: border-color 140ms ease, background-color 140ms ease, box-shadow 140ms ease;
+}
+.wizard-preset-card:hover {
+  border-color: color-mix(in srgb, var(--brand-accent) 45%, var(--color-kumo-line));
+  background: var(--color-kumo-elevated);
+}
+.wizard-preset-card.is-active {
+  border-color: var(--brand-accent);
+  background: var(--brand-accent-soft);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--brand-accent) 40%, transparent);
+}
+.node-cores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.node-core-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: var(--ui-card-pad);
+}
+@media (max-width: 1020px) {
+  .node-cores-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 730px) {
+  .node-overview-grid,
+  .node-instance-card,
+  .node-cores-grid,
+  .wizard-preset-grid,
+  .node-flow-strip {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .node-flow-arrow {
+    display: none;
+  }
+}

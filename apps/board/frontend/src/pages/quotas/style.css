@@ -1,0 +1,4 @@
+.quota-account { display: grid; gap: .15rem; }
+.quota-account p { overflow-wrap: anywhere; }
+.quota-meter { min-inline-size: 7rem; }
+.quota-meter span { font-size: .875rem; }

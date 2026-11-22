@@ -1,0 +1,109 @@
+.announcement-title-button {
+  justify-content: flex-start;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.announcement-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.announcement-preview p {
+  max-block-size: 55dvh;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.announcement-preview time {
+  color: var(--text-color-kumo-subtle);
+}
+
+.announcement-mode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-kumo-line);
+  background: color-mix(in srgb, var(--color-kumo-recessed) 35%, transparent);
+  text-align: start;
+  cursor: pointer;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.announcement-mode-card:hover {
+  border-color: var(--color-kumo-interact);
+}
+
+.announcement-mode-card.is-selected {
+  border-color: var(--brand-accent-border);
+  background: var(--brand-accent-soft);
+}
+
+/* ── Fullscreen Announcement Overlay ──────────────────────────────────────── */
+.fullscreen-notice-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  background: color-mix(in srgb, #000 62%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+.fullscreen-notice-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(56rem, 100%);
+  max-height: min(86dvh, 48rem);
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid var(--color-kumo-line);
+  background: var(--color-kumo-base);
+  box-shadow: 0 24px 64px rgb(0 0 0 / 34%);
+}
+
+.fullscreen-notice-accent {
+  height: 4px;
+  width: 100%;
+  flex: none;
+  background: linear-gradient(90deg, var(--brand-accent), var(--brand-accent-strong));
+}
+
+.fullscreen-notice-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: none;
+  padding: 1.35rem 1.5rem 1.1rem;
+  border-bottom: 1px solid var(--color-kumo-line);
+}
+
+.fullscreen-notice-body {
+  flex: 1 1 auto;
+  min-height: 8rem;
+  overflow-y: auto;
+  padding: 1.4rem 1.5rem;
+}
+
+.fullscreen-notice-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  flex: none;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--color-kumo-line);
+  background: color-mix(in srgb, var(--color-kumo-recessed) 45%, var(--color-kumo-base));
+}

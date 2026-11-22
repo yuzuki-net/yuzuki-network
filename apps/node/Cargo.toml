@@ -1,0 +1,34 @@
+[package]
+name = "node"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+async-trait = "0.1"
+clap.workspace = true
+flate2 = "1.1"
+fs2 = "0.4"
+futures-util = "0.3"
+hex = "0.4"
+http = "1"
+prost = "0.14"
+rcgen = "0.14"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "rustls-tls-webpki-roots"] }
+ring = "0.17"
+rusqlite = { version = "0.32", features = ["bundled"] }
+rustls = { version = "0.23", default-features = false, features = ["std", "ring"] }
+rustls-pemfile = "2"
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml_ng = "0.10"
+sha2 = "0.10"
+tokio = { workspace = true, features = ["fs", "net", "process", "signal", "sync", "time"] }
+tokio-tungstenite = { version = "0.28", default-features = false, features = ["connect", "rustls-tls-webpki-roots"] }
+toml = "0.9"
+tonic = { version = "0.14", default-features = false, features = ["channel", "codegen"] }
+tonic-prost = "0.14"
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true
+yuzuki-protocol.workspace = true

@@ -1,0 +1,23 @@
+/* Minimal helpers for settings previews using Kumo semantic tokens. */
+
+.settings-swatch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-kumo-line);
+  background: var(--color-kumo-base);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-color-kumo-default);
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+.settings-swatch-btn:hover:not(:disabled) {
+  background: var(--color-kumo-tint);
+}
+.settings-swatch-btn[aria-pressed="true"] {
+  border-color: var(--brand-accent);
+  background: var(--brand-accent-soft);
+  color: var(--text-color-kumo-strong);
+}

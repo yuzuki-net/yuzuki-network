@@ -1,0 +1,5 @@
+.copy-value { min-width: 0; display: grid; gap: .375rem; }
+.copy-value > span { font-weight: 500; }
+.copy-value [data-slot] { min-width: 0; }
+.copy-value span { user-select: text; }
+.copy-value > div { width: 100%; min-width: 0; }

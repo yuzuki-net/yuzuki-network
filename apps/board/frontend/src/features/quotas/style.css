@@ -1,0 +1,51 @@
+.quota-current {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-kumo-line);
+  border-radius: 0.5rem;
+  background: var(--color-kumo-recessed);
+}
+.quota-current dt {
+  font-size: 0.75rem;
+  color: var(--text-color-kumo-subtle);
+}
+.quota-current dd {
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-color-kumo-strong);
+}
+.quota-inputs {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(6rem, 0.38fr);
+  align-items: start;
+  gap: 0.75rem;
+}
+.quota-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  gap: 0.75rem;
+}
+.quota-link-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--color-kumo-line);
+  border-radius: 0.5rem;
+}
+.quota-link-fields legend {
+  padding-inline: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color-kumo-strong);
+}
+.quota-link-grid {
+  display: grid;
+  gap: 0.75rem;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(8.5rem, 100%), 1fr));
+}

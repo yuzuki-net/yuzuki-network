@@ -1,0 +1,12 @@
+.audit-target { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: end; gap: .2rem; }
+.audit-target .audit-open { max-inline-size: 100%; block-size: auto; white-space: normal; text-align: end; overflow-wrap: anywhere; }
+.audit-open-icon { display: none; }
+.audit-target-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.audit-pagination { display: flex; justify-content: end; }
+@media (max-width: 640px) {
+  .audit-table col[data-column="target"] { width: 7rem !important; }
+  .audit-target .audit-open { inline-size: 2.75rem; min-block-size: 2.75rem; justify-content: center; padding: 0; }
+  .audit-open-label { display: none; }
+  .audit-open-icon { display: block; }
+  .audit-open-icon:dir(rtl) { transform: scaleX(-1); }
+}

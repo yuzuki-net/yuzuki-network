@@ -1,0 +1,79 @@
+.permission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 0.75rem;
+}
+.permission-grid fieldset,
+.role-assignment {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem 0.9rem;
+  border: 1px solid var(--color-kumo-line);
+  border-radius: 0.5rem;
+  background: var(--color-kumo-recessed);
+}
+.permission-grid legend,
+.role-assignment legend {
+  padding-inline: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color-kumo-strong);
+}
+.permission-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem;
+  min-width: 0;
+}
+.permission-edit + .permission-edit {
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--color-kumo-line);
+}
+.permission-edit code {
+  font-size: 0.75rem;
+  color: var(--text-color-kumo-subtle);
+  overflow-wrap: anywhere;
+}
+.permission-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+.permission-select {
+  min-width: 7rem;
+  font-size: 0.8125rem;
+}
+.role-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: 0.65rem;
+}
+.role-option {
+  min-width: 0;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-kumo-line);
+  background: var(--color-kumo-base);
+}
+.role-option-label {
+  display: grid;
+  gap: 0.15rem;
+  overflow-wrap: anywhere;
+}
+.role-option-label .muted {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.permission-disclosure {
+  font-weight: 600;
+}
+.permission-disclosure-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-block: 0.65rem 0.15rem;
+}

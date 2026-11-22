@@ -1,0 +1,75 @@
+.portal {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100dvh;
+  color: var(--text-color-kumo-default);
+  background: var(--color-kumo-canvas);
+}
+
+.portal-width {
+  inline-size: min(100% - clamp(1.5rem, 6vw, 5rem), 78rem);
+  margin-inline: auto;
+}
+
+.portal-header,
+.portal-footer {
+  background: var(--color-kumo-base);
+}
+.portal-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-block-end: 1px solid var(--color-kumo-line);
+}
+.portal-footer {
+  margin-block-start: auto;
+  border-block-start: 1px solid var(--color-kumo-line);
+}
+
+.portal-header-inner,
+.portal-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.portal-header-inner {
+  height: 58px;
+}
+.portal-footer-inner {
+  flex-wrap: wrap;
+  padding-block: 1rem;
+}
+
+.portal-navigation {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+.portal-navigation-placeholder {
+  inline-size: 5.5rem;
+  block-size: 2rem;
+}
+
+.portal-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-color-kumo-subtle);
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+.portal-website:hover {
+  color: var(--brand-accent-strong);
+  text-decoration: underline;
+}
+:root[data-mode="dark"] .portal-website:hover {
+  color: var(--brand-light);
+}
+
+@media (max-width: 36rem) {
+  .portal-width {
+    inline-size: calc(100% - 1.5rem);
+  }
+}

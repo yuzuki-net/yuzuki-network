@@ -1,0 +1,11 @@
+{
+  "remaining_traffic": "📊 Remaining traffic: {remaining} / {total}",
+  "used_traffic_unlimited": "📊 Traffic used: {used} · Unlimited",
+  "next_reset": "📅 Next reset: {date}",
+  "expires": "📅 Expires: {date}",
+  "no_expiry": "No expiry",
+  "unlimited_validity": "📅 Validity: {date}",
+  "website": "🌐 Website: {url}",
+  "group_name": "📊 Subscription info",
+  "custom_template_example": "👤 {email} · Devices {devices}/{max_devices}"
+}

@@ -1,0 +1,11 @@
+{
+  "remaining_traffic": "📊 残りの通信量：{remaining} / {total}",
+  "used_traffic_unlimited": "📊 使用済み通信量：{used} · 上限なし",
+  "next_reset": "📅 次回リセット：{date}",
+  "expires": "📅 有効期限：{date}",
+  "no_expiry": "期限なし",
+  "unlimited_validity": "📅 有効期限：{date}",
+  "website": "🌐 公式サイト：{url}",
+  "group_name": "📊 サブスクリプション情報",
+  "custom_template_example": "👤 {email} · 端末 {devices}/{max_devices}"
+}

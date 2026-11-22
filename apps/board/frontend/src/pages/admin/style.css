@@ -1,0 +1,39 @@
+.dashboard-visual {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.dashboard-chart-region {
+  position: relative;
+  min-width: 0;
+}
+.dashboard-chart-previous {
+  opacity: 0.38;
+}
+.dashboard-chart-pending {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.dashboard-series {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem 0.25rem;
+}
+.dashboard-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.75rem 1.25rem 1rem;
+  border-top: 1px solid var(--color-kumo-line);
+}
+.dashboard-samples {
+  padding: 0 1.25rem 1rem;
+}
+.dashboard-samples th {
+  white-space: normal;
+}

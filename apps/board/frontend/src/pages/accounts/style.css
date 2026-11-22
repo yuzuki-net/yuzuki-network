@@ -1,0 +1,65 @@
+.account-tabs {
+  border-bottom: 1px solid var(--color-kumo-line);
+}
+.user-name {
+  max-width: 100%;
+  justify-content: flex-start;
+  font-weight: 600;
+  white-space: normal;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+.user-name span {
+  min-width: 0;
+}
+.user-name svg {
+  flex: none;
+  color: var(--brand-accent);
+}
+.user-name:hover span {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: var(--ui-card-pad);
+  min-width: 0;
+}
+.profile-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.profile-form {
+  width: 100%;
+}
+.profile-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+}
+.profile-attributes dt {
+  font-size: 0.75rem;
+  color: var(--text-color-kumo-subtle);
+}
+.profile-attributes dd {
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+@media (max-width: 620px) {
+  .user-directory col[data-column="status"] {
+    width: 6rem !important;
+  }
+  .user-directory .user-name {
+    display: flex;
+    width: 100%;
+  }
+  .user-directory .user-name span,
+  .user-directory .directory-email {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

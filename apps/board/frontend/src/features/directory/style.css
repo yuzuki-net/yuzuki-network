@@ -1,0 +1,3 @@
+.directory-search { padding-bottom: 1rem; }
+.directory-search > :first-child { flex: 1 1 13rem; max-width: 30rem; }
+.directory-search [role="combobox"] { min-width: 8rem; }

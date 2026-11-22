@@ -1,0 +1,98 @@
+.routing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.routing-tabs {
+  border-bottom: 1px solid var(--color-kumo-line);
+}
+.routing-rule {
+  min-width: 0;
+  border: 1px solid var(--color-kumo-line);
+  background: var(--color-kumo-recessed);
+  padding: 0.75rem 0.9rem 0.9rem;
+  border-radius: 0.5rem;
+  transition: border-color 120ms ease;
+}
+.routing-rule:hover {
+  border-color: var(--color-kumo-interact);
+}
+.routing-row {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) minmax(10rem, 1.5fr) minmax(9rem, 1fr);
+  align-items: start;
+  gap: 0.75rem;
+}
+.routing-actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-kumo-base);
+  border: 1px solid var(--color-kumo-line);
+  border-radius: 0.5rem;
+  box-shadow: 0 -4px 18px rgb(0 0 0 / 6%);
+}
+.routing-disclosure {
+  padding: 0.875rem 1.25rem;
+  width: 100%;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.routing-revisions {
+  display: flex;
+  flex-direction: column;
+}
+.routing-revisions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  min-height: 3.5rem;
+}
+.routing-revisions li + li {
+  border-top: 1px solid var(--color-kumo-line);
+}
+.routing-preview-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+}
+.routing-preview-form > :first-child {
+  flex: 0 1 24rem;
+  min-inline-size: min(100%, 15rem);
+}
+.routing-preview-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+.routing-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.routing-scenario-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.875rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--color-kumo-line);
+  background: color-mix(in srgb, var(--color-kumo-recessed) 35%, transparent);
+}
+@media (max-width: 760px) {
+  .routing-row,
+  .routing-scenarios-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

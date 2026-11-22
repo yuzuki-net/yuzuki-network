@@ -1,0 +1,17 @@
+board_url = "https://control.example.net:3443"
+ca_certificate = "/etc/yuzuki/control-ca.crt"
+state_dir = "state/node"
+
+# Core binaries are optional. You can connect this node without pre-installing
+# xray, sing-box, or mihomo and install/manage them visually from the Board panel.
+[core_management]
+enabled = true
+detect_system_binaries = true
+# Optional mirror prefix for GitHub release downloads, e.g. "https://mirror.example.net/"
+# download_mirror = ""
+
+# Optional explicit binary overrides:
+# [binaries]
+# xray = "/usr/local/bin/xray"
+# sing-box = "/usr/local/bin/sing-box"
+# mihomo = "/usr/local/bin/mihomo"

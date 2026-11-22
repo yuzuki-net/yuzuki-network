@@ -1,0 +1,11 @@
+{
+  "remaining_traffic": "📊 剩余流量：{remaining} / {total}",
+  "used_traffic_unlimited": "📊 已用流量：{used} · 无限流量",
+  "next_reset": "📅 下次重置：{date}",
+  "expires": "📅 到期时间：{date}",
+  "no_expiry": "长期有效",
+  "unlimited_validity": "📅 有效期：{date}",
+  "website": "🌐 官网：{url}",
+  "group_name": "📊 套餐信息",
+  "custom_template_example": "👤 {email} · 已绑设备 {devices}/{max_devices}"
+}

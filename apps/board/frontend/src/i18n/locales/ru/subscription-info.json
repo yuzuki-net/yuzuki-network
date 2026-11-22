@@ -1,0 +1,11 @@
+{
+  "remaining_traffic": "📊 Остаток трафика: {remaining} / {total}",
+  "used_traffic_unlimited": "📊 Использовано трафика: {used} · Без лимита",
+  "next_reset": "📅 Следующий сброс: {date}",
+  "expires": "📅 Действует до: {date}",
+  "no_expiry": "Бессрочно",
+  "unlimited_validity": "📅 Срок действия: {date}",
+  "website": "🌐 Сайт: {url}",
+  "group_name": "📊 Информация о подписке",
+  "custom_template_example": "👤 {email} · Устройства {devices}/{max_devices}"
+}
